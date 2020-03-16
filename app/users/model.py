@@ -1,4 +1,4 @@
-from flask_sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy      #pip install flask-sqlalchemy
 from sqlalchemy.exc import SQLAlchemyError
 from werkzeug.security import generate_password_hash, check_password_hash
 
@@ -24,7 +24,7 @@ class Users(db.Model):
 
     def check_password(self, hash, password):
         return check_password_hash(hash, password)
-
+# 输入id获取数据
     def get(self, id):
         return self.query.filter_by(id=id).first()
 

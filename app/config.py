@@ -5,8 +5,9 @@ DB_DB = 'flask-pyjwt-auth'
 
 DEBUG = True
 PORT = 3333
-HOST = "192.168.1.141"
+HOST = "127.0.0.1"
 SECRET_KEY = "my blog"
 
-SQLALCHEMY_TRACK_MODIFICATIONS = False
-SQLALCHEMY_DATABASE_URI = 'mysql://' + DB_USER + ':' + DB_PASSWORD + '@' + DB_HOST + '/' + DB_DB
+SQLALCHEMY_TRACK_MODIFICATIONS = True
+# SQLALCHEMY_DATABASE_URI = 'mysql://' + DB_USER + ':' + DB_PASSWORD + '@' + DB_HOST + '/' + DB_DB
+SQLALCHEMY_DATABASE_URI = 'sqlite:///dbdatabase.db'

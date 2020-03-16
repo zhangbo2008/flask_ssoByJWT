@@ -1,0 +1,23 @@
+https://www.cnblogs.com/chnmig/p/10143324.html
+
+
+2020-03-16,19点56
+给前段的借口文档看api.py这个文件即可.
+
+1.启动run.py
+2.运行postman
+post
+http://127.0.0.1:3333/register
+body:form-data
+email:xxxxx
+username:xxxx
+password:xxxx
+然后点send就能看到注册成功的字样.
+
+3. 测试/user接口:
+
+
+    # head:  里面写上key Authorization  value:JWT token
+    # 例子:JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1ODY5NTQzNDUsImlhdCI6MTU4NDM2MjMzNSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6NiwibG9naW5fdGltZSI6MTU4NDM2MjMzNX19.lZesm6Ekxi3SURLQhgp95QTMIJ_k112zR4jj54RoZbU
+
+

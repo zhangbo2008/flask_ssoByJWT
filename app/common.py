@@ -6,7 +6,7 @@ def trueReturn(data, msg):
     }
 
 
-def falseReturn(data=None, msg):
+def falseReturn(data,msg):
     return {
         "status": False,
         "data": data,
